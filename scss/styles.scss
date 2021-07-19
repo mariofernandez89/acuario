@@ -1,0 +1,686 @@
+@import "scss/variables.scss";
+ 
+*{
+   margin: 0;
+   padding: 0;
+}
+
+/* body,main,p h2,h3 */
+
+body{
+   background-color:$color-primary;
+   color: #000;
+   padding: 30px 0px 0px 0px;
+   
+}
+
+main{
+   margin: 60px 0px 40px 0px;
+}
+
+p{
+   font-size: 20px;
+   line-height: 30px;
+   font-family: $font-body;
+   color: white;
+}
+
+h2{
+   text-align: center;
+   margin-bottom: 40px;
+}
+
+h3{
+   font-size: 40px;
+   margin-bottom: 15px;
+}
+
+
+
+
+/* header*/
+.contenedorLogo{
+   display: flex;
+   justify-content: center;
+
+   .logo{
+      width: 300px; 
+      height: 300px;
+      border: solid;
+      margin-top: 100px;
+   }
+} 
+
+h1{
+   font-family: 'Limelight', cursive;
+   font-size: 80px;
+   font-weight: bolder;
+   text-align: center;
+   text-decoration-line: underline;
+   word-spacing: 10px;
+   letter-spacing: 6px;
+   animation-name:backInDown;
+   animation-duration: 2s;
+}
+
+.subtituloDePagina{
+   font-size: 25px;
+   font-weight: bolder;
+   text-align: center;
+   margin-bottom: 85px;
+   animation-name:backInLeft;
+   animation-duration: 2s;
+   color: black;
+}
+
+
+
+
+/* Menu */
+.menuNavegacionPadre{
+   padding: 25px;
+   background-color:#aacfc8;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 1000;
+   .menuNavegacion {
+      display: flex;
+      margin-left: 250px;
+
+      .directorioSecciones{
+         color: #000;
+         font-family: 'Passion One', cursive; 
+         font-size: 24px;
+         text-decoration: none;
+         transition: width 2s;
+         letter-spacing: 1px;
+      }
+   }
+}
+
+
+li {
+   list-style: none;
+   width: 25%;
+}
+
+.menuNavegacion li ul li{
+   display: inline;
+   margin-right: 20px;
+   height: 100%;
+   align-items: center;
+   text-align: center;
+} 
+
+.tiendas{
+   position: absolute;
+   display: none;
+
+   .tiendas li {
+      display: inline;
+   }
+   
+}
+
+.tiendaPrincipal:hover .tiendas{
+   display: block;
+}
+
+
+
+
+/* Index */
+ 
+.itemOfCarousel{
+   width: 600px;
+   height: 600px;
+} 
+
+.conteinerOfCarousel{
+   margin: 0px 127px 50px 155px;
+}
+
+
+
+
+.articleIndex{
+   display: flex;     
+   flex-direction: column; 
+   
+   .articleIndex__wrapper{
+      display: flex;
+      justify-content: center;
+      margin: 15px;
+   }
+     .wrapper__img{
+        width: 400px;
+        height: 400px;
+        border: double;
+        color: rgb(233, 233, 233);
+     }
+   
+}
+
+.promociones{
+   display: flex;
+   justify-content: center;
+
+}
+
+
+
+
+/* quienes */
+.history{
+   padding: 15px 60px 20px 60px;
+
+   .history__title{
+      text-align: center;
+      margin-bottom: 40px;
+   }
+   
+   .history__text{
+      font-size: 20px;
+      line-height: 30px;
+      font-family: 'Play', sans-serif;
+      color: white;
+   }
+
+   .history__containerLocalImage{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
+      grid-template-rows: auto ;
+      column-gap: 15px;
+      row-gap: 15px;
+      justify-content: center;
+      margin-top: 60px;
+
+      .containerLocalImage__image{
+         width: 100%;
+         border: double 2px rgb(252, 255, 252);
+         height: 100%;
+         transition: transform .2s; 
+      }
+      
+       .containerLocalImage__image:hover{
+         transform: scale(1.1,1.1);
+      }
+       
+   }
+
+}
+
+
+
+
+/* preguntas frecuentes */
+.contenedorDePreguntas{
+   width: 80%;
+   margin: auto;
+
+   .contenedorDePreguntas p{
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 25px; 
+   }
+
+   .tituloDePreguntas{
+      font-size: 40px;
+      font-family: 'Josefin Sans', sans-serif;
+      text-decoration: underline;
+      text-align: center;
+      margin: 50px 0px 50px 0px;
+   
+   }
+
+   /* table de bootstrap */
+}
+
+.contenedorDeVideos{
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: auto;
+   row-gap: 40px;
+   width: 80%;
+   margin: auto;
+      
+   .videos{
+      border: solid 5px rgb(255, 217, 0);;
+      height: 300px;
+      width: 100%;
+   }
+
+}
+
+
+
+
+/* tienda */
+
+.titleSectionOne{
+   color: #000444;
+   font-weight: bolder;
+   font-size: 40px;
+   padding:40px 0px 40px 0px;
+   text-align: center;
+}
+
+.titleSectionTwo{
+   @extend .titleSectionOne;
+   color:#fff176;
+}
+
+
+.titleSectionThree{
+  @extend .titleSectionOne;
+  color: grey
+}
+
+
+
+
+.sectionOfStore{
+   display: flex;  
+   text-align: center;
+   justify-content: space-evenly;
+   padding-bottom: 100px;
+
+   .sectionOfStore__container:hover .container__description{
+      display: block;
+   }
+
+   .sectionOfStore__container{
+   position: relative;
+
+      .container__item{
+         width: 300px;
+         height: 300px;
+         border: double;
+         color: chartreuse;
+      }
+
+      .container__infoSectionOne{
+         color: #000444;
+         font-weight: bolder;
+      }
+
+      .container__infoSectionTwo{
+         color: #fff176;
+         font-weight: bolder;
+      }
+      
+      .container__infoSectionThree{
+         color: grey;
+         font-weight: bolder;
+      }
+
+      .botonSinStock{
+         background-color: #aacfc8;
+      }
+
+      .container__description{
+         display: none;
+         position: absolute;
+         top: 0;
+         bottom: 20%;
+         background: rgba(27, 27, 27, 0.5);
+      }
+
+   }
+
+   
+}
+
+
+
+
+/* Contacto */
+
+.seccionContacto{
+   display: flex;  
+   flex-direction: row; 
+   justify-content: space-around;
+   margin-bottom: 30px;
+   flex-wrap: wrap;
+
+   .contactoInfoLocal{
+      margin-top: 150px
+   }
+
+   .formulario_{
+      box-sizing: border-box;
+      border: 2px black solid;
+      width: 400px;
+      padding: 30px;
+      margin: auto;
+      border-radius: 4px;
+      background-color: #aacfc8;
+
+      .formulario_ p{
+         font-size: 24px;
+         margin-bottom: 20px;
+      }
+
+      .formularioDatos{
+         padding: 10px;
+         margin-bottom: 16px;
+      }  
+   }
+
+   .mapa{
+      width:600px;
+      height:450px; 
+      border: 2px solid black;
+   }
+
+}
+
+
+
+
+
+/* footer */
+
+.footerContainer{
+      display: flex;
+      justify-content: space-around;
+      background: #aacfc8;
+   
+      .section__titleOfSectionsFooter{
+         color:black;
+         font-size: 30px;
+        /*  padding-bottom: 20px; */
+         text-align: center;
+      }
+
+
+      .list__titleOfSectionsFooter, .section__titleOfSectionsFooterLast{
+         text-align: left;
+         color:black;
+         font-size: 30px;
+         padding-bottom: 5px;
+      }
+
+      .section__cardsAccepted{
+         width: 400px;
+         height: 180px;
+      }
+   
+      .infoPlace__data{
+         color: black;
+
+      }
+
+      .infoPlace__imageFooter{
+         height: 40px;
+         width: 40px;
+      }
+      
+      .list__footerMenu{
+         text-decoration: none;
+         list-style: none;
+      
+         .footerMenu__Links{
+            color:black;
+            text-decoration: none;
+            list-style: none;
+            font-size: 20px;
+         }
+      }
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+   body{
+     background-color: #3c5464;
+  }
+
+
+
+  
+   h1{
+      font-size: 60px;
+   }
+
+   .contenedorLogo{
+      .logo{
+         margin-top: 5px;
+      }
+   }
+
+   
+  .menuNavegacionPadre{
+      position: initial;
+      text-align: -webkit-center;
+      .menuNavegacion{
+         display: block;
+         margin-left: 0px;
+      }
+   }
+
+   .conteinerOfCarousel{
+      margin: 0px 0px 50px 0px;
+      .carousel-inner{
+       width: 760px;
+       height: 284px;
+      }
+      
+   }
+
+   .articleIndex{
+      .articleIndex__wrapper{
+         
+         .wrapper__img{
+            width: 200px;
+            height: 200px;
+         }
+      }
+   }
+
+
+   .imgPromo{
+      width: 300px;
+      height: 200px;
+   }
+ 
+   
+ 
+   .history{
+      .history__containerLocalImage{
+         .containerLocalImage__image:hover{
+            transform: scale(2.5,2.5);
+         }
+      }
+   }
+     
+   .sectionOfStore{
+      display: block;
+      .sectionOfStore__container{
+         margin-top: 25px;
+         }
+      }
+
+      .seccionContacto{
+         .contactoInfoLocal{
+            margin: 25px 0px 15px 0px;
+            width: 325px;
+            .imgContact{
+               width: 325px;
+            }
+         }
+
+         .formulario_{
+            width: 324px;
+            height: 554px;
+            margin-bottom: 15px;
+            .formularioDatos_{
+               width: 198px;
+               height: 150px;
+            }
+         }
+         .mapa{
+            width: 320px;
+         }
+      }
+   
+   
+   
+     .footerContainer{
+        display: block;
+        text-align: -webkit-center;
+        width: 100%;
+   
+        .footerContainer__section{
+           .section__titleOfSectionsFooterLast {
+              text-align: center;
+           }
+   
+           .list__titleOfSectionsFooter{
+              text-align: center;
+           }
+           .section__cardsAccepted{
+              width: 300px;
+              height: 150px;
+           }
+        }
+     } 
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 365px) {
+  body{
+     background-color:$color-primary;
+  }
+
+  h1{
+     font-size: 50px;
+  }
+
+  .contenedorLogo{
+     .logo{
+        margin-top: 5px;
+     }
+  }
+
+  .menuNavegacionPadre{
+     position: initial;
+     text-align: -webkit-center;
+     .menuNavegacion{
+      display: block;
+      margin-left: 0px;
+     }
+  }
+
+   .articleIndex{
+      .articleIndex__wrapper{
+         
+         .wrapper__img{
+            width: 150px;
+            height: 150px;
+         }
+      }
+   }
+
+
+
+  .imgPromo{
+     width: 350px;
+     height: 120px;
+  }
+
+  .conteinerOfCarousel{
+     margin: 0px 0px 50px 0px;
+     .carousel-inner{
+      width: 360px;
+      height: 150px;
+     }
+     
+  }
+
+   .history{
+   .history__containerLocalImage{
+      .containerLocalImage__image:hover{
+         transform: scale(3.3,3.3);
+         }
+      }
+   }
+  
+
+
+
+  .sectionOfStore{
+   display: block;
+   .sectionOfStore__container{
+      margin-top: 20px;
+      }
+   }
+
+
+   .seccionContacto{
+      .contactoInfoLocal{
+         margin: 25px 0px 15px 0px;
+         width: 250px;
+         .imgContact{
+            width: 250px;
+         }
+      }
+      .formulario_{
+         width: 250px;
+         margin-bottom: 15px;
+         .formularioDatos_{
+            width: 198px;
+            height: 150px;
+         }
+      }
+   }
+
+
+
+  .footerContainer{
+     display: block;
+     text-align: -webkit-center;
+     width: 100%;
+
+     .footerContainer__section{
+        .section__titleOfSectionsFooterLast {
+           text-align: center;
+        }
+
+        .list__titleOfSectionsFooter{
+           text-align: center;
+        }
+        .section__cardsAccepted{
+           width: 300px;
+           height: 150px;
+        }
+     }
+  } 
+} 
+
+
+
+
