@@ -39,7 +39,7 @@ h3{
 
 
 /* header*/
-.contenedorLogo{
+.contenedorlogo{
    display: flex;
    justify-content: center;
 
@@ -63,7 +63,7 @@ h1{
    animation-duration: 2s;
 }
 
-.subtituloDePagina{
+.subtitulodepagina{
    font-size: 25px;
    font-weight: bolder;
    text-align: center;
@@ -77,55 +77,61 @@ h1{
 
 
 /* Menu */
-.menuNavegacionPadre{
+.headernav{
    padding: 25px;
    background-color:#aacfc8;
    position: fixed;
    top: 0;
    width: 100%;
    z-index: 1000;
-   .menuNavegacion {
+   .headernav__menu {
       display: flex;
       margin-left: 250px;
 
-      .directorioSecciones{
-         color: #000;
-         font-family: 'Passion One', cursive; 
-         font-size: 24px;
-         text-decoration: none;
-         transition: width 2s;
-         letter-spacing: 1px;
+      
+
+      .menu__links{
+         list-style: none;
+         width: 25%;
       }
+
+      .menu__linksstore{
+         list-style: none;
+         width: 25%;
+      }
+
+
+         .links__ofmenu{
+            color: #000;
+            font-family: 'Passion One', cursive; 
+            font-size: 24px;
+            text-decoration: none;
+            transition: width 2s;
+            letter-spacing: 1px;
+         }
+
+         .linksstore__list{
+            position: absolute;
+            display: none;
+         
+            .list__items{
+               display: inline;
+               margin-right: 20px;
+               height: 100%;
+               align-items: center;
+               text-align: center;
+            } 
+            
+         }
    }
 }
 
-
-li {
-   list-style: none;
-   width: 25%;
-}
-
-.menuNavegacion li ul li{
-   display: inline;
-   margin-right: 20px;
-   height: 100%;
-   align-items: center;
-   text-align: center;
-} 
-
-.tiendas{
-   position: absolute;
-   display: none;
-
-   .tiendas li {
-      display: inline;
-   }
-   
-}
-
-.tiendaPrincipal:hover .tiendas{
+.menu__linksstore:hover .linksstore__list{
    display: block;
 }
+
+
+
 
 
 
@@ -454,17 +460,17 @@ li {
       font-size: 60px;
    }
 
-   .contenedorLogo{
+   .contenedorlogo{
       .logo{
          margin-top: 5px;
       }
    }
 
    
-  .menuNavegacionPadre{
+  .headernav{
       position: initial;
       text-align: -webkit-center;
-      .menuNavegacion{
+      .headernav__menu{
          display: block;
          margin-left: 0px;
       }
@@ -582,16 +588,16 @@ li {
      font-size: 50px;
   }
 
-  .contenedorLogo{
+  .contenedorlogo{
      .logo{
         margin-top: 5px;
      }
   }
 
-  .menuNavegacionPadre{
+  .headernav{
      position: initial;
      text-align: -webkit-center;
-     .menuNavegacion{
+     .headernav__menu{
       display: block;
       margin-left: 0px;
      }
