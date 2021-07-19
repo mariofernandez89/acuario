@@ -11,8 +11,6 @@ body{
    background-color:$color-primary;
    color: #000;
    padding: 30px 0px 0px 0px;
-   overflow: hidden;
-   
 }
 
 main{
@@ -146,9 +144,11 @@ li {
 
 
 
+
 .articleIndex{
    display: flex;     
    flex-direction: column; 
+   overflow: hidden;
    
    .articleIndex__wrapper{
       display: flex;
