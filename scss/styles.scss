@@ -86,9 +86,7 @@ h1{
    z-index: 1000;
    .headernav__menu {
       display: flex;
-      margin-left: 250px;
-
-      
+      text-align: center;
 
       .menu__links{
          list-style: none;
@@ -138,12 +136,7 @@ h1{
 
 /* Index */
  
-.itemOfCarousel{
-   width: 600px;
-   height: 600px;
-} 
-
-.conteinerOfCarousel{
+.conteinerofcarousel{
    margin: 0px 127px 50px 155px;
 }
 
@@ -151,12 +144,16 @@ h1{
 
 
 
-.articleIndex{
+.articleindex{
    display: flex;     
    flex-direction: column; 
    overflow: hidden;
    
-   .articleIndex__wrapper{
+   .articleindex__title{
+      text-align: center;
+   }
+
+   .articleindex__wrapper{
       display: flex;
       justify-content: center;
       margin: 15px;
@@ -166,6 +163,9 @@ h1{
         height: 400px;
         border: double;
         color: rgb(233, 233, 233);
+     }
+     .info__title{
+        font-size: 45px;
      }
    
 }
@@ -195,7 +195,7 @@ h1{
       color: white;
    }
 
-   .history__containerLocalImage{
+   .history__containerlocalimage{
       width: 100%;
       display: grid;
       grid-template-columns: 30% 30% 30%;
@@ -205,14 +205,14 @@ h1{
       justify-content: center;
       margin-top: 60px;
 
-      .containerLocalImage__image{
+      .containerlocalimage__image{
          width: 100%;
          border: double 2px rgb(252, 255, 252);
          height: 100%;
          transition: transform .2s; 
       }
       
-       .containerLocalImage__image:hover{
+       .containerlocalimage__image:hover{
          transform: scale(1.1,1.1);
       }
        
@@ -224,17 +224,20 @@ h1{
 
 
 /* preguntas frecuentes */
-.contenedorDePreguntas{
+.contenedordepreguntas{
    width: 80%;
    margin: auto;
 
-   .contenedorDePreguntas p{
+   .contenedordepreguntas__titleossection{
+      text-align: center;
+   }
+   .contenedordepreguntas__info{
       font-size: 20px;
       line-height: 28px;
       margin-bottom: 25px; 
    }
 
-   .tituloDePreguntas{
+   .contenedordepreguntas__title{
       font-size: 40px;
       font-family: 'Josefin Sans', sans-serif;
       text-decoration: underline;
@@ -246,14 +249,17 @@ h1{
    /* table de bootstrap */
 }
 
-.contenedorDeVideos{
+.contenedordevideos{
    display: grid;
    grid-template-columns: 100%;
    grid-template-rows: auto;
    row-gap: 40px;
    width: 80%;
    margin: auto;
-      
+      .contenedordevideos__title{
+         text-align: center;
+         font-size: 45px;
+      }
    .videos{
       border: solid 5px rgb(255, 217, 0);;
       height: 300px;
@@ -267,39 +273,38 @@ h1{
 
 /* tienda */
 
-.titleSectionOne{
+.titlesectionone{
    color: #000444;
    font-weight: bolder;
    font-size: 40px;
    padding:40px 0px 40px 0px;
    text-align: center;
+
 }
 
-.titleSectionTwo{
-   @extend .titleSectionOne;
+.titlesectiontwo{
+   @extend .titlesectionone;
    color:#fff176;
 }
 
 
-.titleSectionThree{
-  @extend .titleSectionOne;
+.titlesectionthree{
+  @extend .titlesectionone;
   color: grey
 }
 
-
-
-
-.sectionOfStore{
-   display: flex;  
+.sectionofstore{
+   display: flex; 
+   flex-wrap: wrap; 
    text-align: center;
    justify-content: space-evenly;
    padding-bottom: 100px;
 
-   .sectionOfStore__container:hover .container__description{
+   .sectionofstore__container:hover .container__description{
       display: block;
    }
 
-   .sectionOfStore__container{
+   .sectionofstore__container{
    position: relative;
 
       .container__item{
@@ -309,22 +314,22 @@ h1{
          color: chartreuse;
       }
 
-      .container__infoSectionOne{
+      .container__infosectionone{
          color: #000444;
          font-weight: bolder;
       }
 
-      .container__infoSectionTwo{
+      .container__infosectiontwo{
          color: #fff176;
          font-weight: bolder;
       }
       
-      .container__infoSectionThree{
+      .container__infosectionthree{
          color: grey;
          font-weight: bolder;
       }
 
-      .botonSinStock{
+      .botonsinstock{
          background-color: #aacfc8;
       }
 
@@ -346,14 +351,14 @@ h1{
 
 /* Contacto */
 
-.seccionContacto{
+.seccioncontacto{
    display: flex;  
    flex-direction: row; 
    justify-content: space-around;
    margin-bottom: 30px;
    flex-wrap: wrap;
 
-   .contactoInfoLocal{
+   .contactoinfolocal{
       margin-top: 150px
    }
 
@@ -371,7 +376,7 @@ h1{
          margin-bottom: 20px;
       }
 
-      .formularioDatos{
+      .formulariodatos{
          padding: 10px;
          margin-bottom: 16px;
       }  
@@ -391,46 +396,45 @@ h1{
 
 /* footer */
 
-.footerContainer{
+.footercontainer{
       display: flex;
       justify-content: space-around;
       background: #aacfc8;
    
-      .section__titleOfSectionsFooter{
+      .section__titleofsectionsfooter{
          color:black;
          font-size: 30px;
-        /*  padding-bottom: 20px; */
          text-align: center;
       }
 
 
-      .list__titleOfSectionsFooter, .section__titleOfSectionsFooterLast{
+      .list__titleofsectionsfooter, .section__titleofsectionsfooterlast{
          text-align: left;
          color:black;
          font-size: 30px;
          padding-bottom: 5px;
       }
 
-      .section__cardsAccepted{
+      .section__cardsaccepted{
          width: 400px;
          height: 180px;
       }
    
-      .infoPlace__data{
+      .infoplace__data{
          color: black;
 
       }
 
-      .infoPlace__imageFooter{
+      .infoplace__imagefooter{
          height: 40px;
          width: 40px;
       }
       
-      .list__footerMenu{
+      .list__footermenu{
          text-decoration: none;
          list-style: none;
       
-         .footerMenu__Links{
+         .footermenu__links{
             color:black;
             text-decoration: none;
             list-style: none;
@@ -453,9 +457,6 @@ h1{
      background-color: #3c5464;
   }
 
-
-
-  
    h1{
       font-size: 60px;
    }
@@ -476,7 +477,7 @@ h1{
       }
    }
 
-   .conteinerOfCarousel{
+   .conteinerofcarousel{
       margin: 0px 0px 50px 0px;
       .carousel-inner{
        width: 760px;
@@ -485,8 +486,8 @@ h1{
       
    }
 
-   .articleIndex{
-      .articleIndex__wrapper{
+   .articleindex{
+      .articleindex__wrapper{
          
          .wrapper__img{
             width: 200px;
@@ -496,7 +497,7 @@ h1{
    }
 
 
-   .imgPromo{
+   .imgpromo{
       width: 300px;
       height: 200px;
    }
@@ -504,25 +505,25 @@ h1{
    
  
    .history{
-      .history__containerLocalImage{
-         .containerLocalImage__image:hover{
+      .history__containerlocalimage{
+         .containerlocalimage__image:hover{
             transform: scale(2.5,2.5);
          }
       }
    }
      
-   .sectionOfStore{
+   .sectionofstore{
       display: block;
-      .sectionOfStore__container{
+      .sectionofstore__container{
          margin-top: 25px;
          }
       }
 
-      .seccionContacto{
-         .contactoInfoLocal{
+      .seccioncontacto{
+         .contactoinfolocal{
             margin: 25px 0px 15px 0px;
             width: 325px;
-            .imgContact{
+            .imgcontact{
                width: 325px;
             }
          }
@@ -531,7 +532,7 @@ h1{
             width: 324px;
             height: 554px;
             margin-bottom: 15px;
-            .formularioDatos_{
+            .formulariodatos_{
                width: 198px;
                height: 150px;
             }
@@ -543,20 +544,20 @@ h1{
    
    
    
-     .footerContainer{
+     .footercontainer{
         display: block;
         text-align: -webkit-center;
         width: 100%;
    
-        .footerContainer__section{
-           .section__titleOfSectionsFooterLast {
+        .footercontainer__section{
+           .section__titleofsectionsfooterlast {
               text-align: center;
            }
    
-           .list__titleOfSectionsFooter{
+           .list__titleofsectionsfooter{
               text-align: center;
            }
-           .section__cardsAccepted{
+           .section__cardsaccepted{
               width: 300px;
               height: 150px;
            }
@@ -603,8 +604,8 @@ h1{
      }
   }
 
-   .articleIndex{
-      .articleIndex__wrapper{
+   .articleindex{
+      .articleindex__wrapper{
          
          .wrapper__img{
             width: 150px;
@@ -615,12 +616,12 @@ h1{
 
 
 
-  .imgPromo{
+  .imgpromo{
      width: 350px;
      height: 120px;
   }
 
-  .conteinerOfCarousel{
+  .conteinerofcarousel{
      margin: 0px 0px 50px 0px;
      .carousel-inner{
       width: 360px;
@@ -630,8 +631,8 @@ h1{
   }
 
    .history{
-   .history__containerLocalImage{
-      .containerLocalImage__image:hover{
+   .history__containerlocalimage{
+      .containerlocalimage__image:hover{
          transform: scale(3.3,3.3);
          }
       }
@@ -640,26 +641,26 @@ h1{
 
 
 
-  .sectionOfStore{
+  .sectionofstore{
    display: block;
-   .sectionOfStore__container{
+   .sectionofstore__container{
       margin-top: 20px;
       }
    }
 
 
-   .seccionContacto{
-      .contactoInfoLocal{
+   .seccioncontacto{
+      .contactoinfolocal{
          margin: 25px 0px 15px 0px;
          width: 250px;
-         .imgContact{
+         .imgcontact{
             width: 250px;
          }
       }
       .formulario_{
          width: 250px;
          margin-bottom: 15px;
-         .formularioDatos_{
+         .formulariodatos_{
             width: 198px;
             height: 150px;
          }
@@ -668,20 +669,20 @@ h1{
 
 
 
-  .footerContainer{
+  .footercontainer{
      display: block;
      text-align: -webkit-center;
      width: 100%;
 
-     .footerContainer__section{
-        .section__titleOfSectionsFooterLast {
+     .footercontainer__section{
+        .section__titleofsectionsfooterlast {
            text-align: center;
         }
 
-        .list__titleOfSectionsFooter{
+        .list__titleofsectionsfooter{
            text-align: center;
         }
-        .section__cardsAccepted{
+        .section__cardsaccepted{
            width: 300px;
            height: 150px;
         }

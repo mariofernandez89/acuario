@@ -66,7 +66,7 @@ h1 {
   z-index: 1000; }
   .headernav .headernav__menu {
     display: flex;
-    margin-left: 250px; }
+    text-align: center; }
     .headernav .headernav__menu .menu__links {
       list-style: none;
       width: 25%; }
@@ -94,26 +94,26 @@ h1 {
   display: block; }
 
 /* Index */
-.itemOfCarousel {
-  width: 600px;
-  height: 600px; }
-
-.conteinerOfCarousel {
+.conteinerofcarousel {
   margin: 0px 127px 50px 155px; }
 
-.articleIndex {
+.articleindex {
   display: flex;
   flex-direction: column;
   overflow: hidden; }
-  .articleIndex .articleIndex__wrapper {
+  .articleindex .articleindex__title {
+    text-align: center; }
+  .articleindex .articleindex__wrapper {
     display: flex;
     justify-content: center;
     margin: 15px; }
-  .articleIndex .wrapper__img {
+  .articleindex .wrapper__img {
     width: 400px;
     height: 400px;
     border: double;
     color: #e9e9e9; }
+  .articleindex .info__title {
+    font-size: 45px; }
 
 .promociones {
   display: flex;
@@ -130,7 +130,7 @@ h1 {
     line-height: 30px;
     font-family: 'Play', sans-serif;
     color: white; }
-  .history .history__containerLocalImage {
+  .history .history__containerlocalimage {
     width: 100%;
     display: grid;
     grid-template-columns: 30% 30% 30%;
@@ -139,82 +139,88 @@ h1 {
     row-gap: 15px;
     justify-content: center;
     margin-top: 60px; }
-    .history .history__containerLocalImage .containerLocalImage__image {
+    .history .history__containerlocalimage .containerlocalimage__image {
       width: 100%;
       border: double 2px #fcfffc;
       height: 100%;
       transition: transform .2s; }
-    .history .history__containerLocalImage .containerLocalImage__image:hover {
+    .history .history__containerlocalimage .containerlocalimage__image:hover {
       transform: scale(1.1, 1.1); }
 
 /* preguntas frecuentes */
-.contenedorDePreguntas {
+.contenedordepreguntas {
   width: 80%;
   margin: auto;
   /* table de bootstrap */ }
-  .contenedorDePreguntas .contenedorDePreguntas p {
+  .contenedordepreguntas .contenedordepreguntas__titleossection {
+    text-align: center; }
+  .contenedordepreguntas .contenedordepreguntas__info {
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 25px; }
-  .contenedorDePreguntas .tituloDePreguntas {
+  .contenedordepreguntas .contenedordepreguntas__title {
     font-size: 40px;
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: underline;
     text-align: center;
     margin: 50px 0px 50px 0px; }
 
-.contenedorDeVideos {
+.contenedordevideos {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto;
   row-gap: 40px;
   width: 80%;
   margin: auto; }
-  .contenedorDeVideos .videos {
+  .contenedordevideos .contenedordevideos__title {
+    text-align: center;
+    font-size: 45px; }
+  .contenedordevideos .videos {
     border: solid 5px #ffd900;
     height: 300px;
     width: 100%; }
 
 /* tienda */
-.titleSectionOne, .titleSectionTwo, .titleSectionThree {
+.titlesectionone, .titlesectiontwo, .titlesectionthree {
   color: #000444;
   font-weight: bolder;
   font-size: 40px;
   padding: 40px 0px 40px 0px;
   text-align: center; }
 
-.titleSectionTwo {
+.titlesectiontwo {
   color: #fff176; }
 
-.titleSectionThree {
+.titlesectionthree {
   color: grey; }
 
-.sectionOfStore {
+.sectionofstore {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: space-evenly;
   padding-bottom: 100px; }
-  .sectionOfStore .sectionOfStore__container:hover .container__description {
+  .sectionofstore .sectionofstore__container:hover .container__description {
     display: block; }
-  .sectionOfStore .sectionOfStore__container {
+  .sectionofstore .sectionofstore__container {
     position: relative; }
-    .sectionOfStore .sectionOfStore__container .container__item {
+    .sectionofstore .sectionofstore__container .container__item {
       width: 300px;
       height: 300px;
       border: double;
       color: chartreuse; }
-    .sectionOfStore .sectionOfStore__container .container__infoSectionOne {
+    .sectionofstore .sectionofstore__container .container__infosectionone {
       color: #000444;
       font-weight: bolder; }
-    .sectionOfStore .sectionOfStore__container .container__infoSectionTwo {
+    .sectionofstore .sectionofstore__container .container__infosectiontwo {
       color: #fff176;
       font-weight: bolder; }
-    .sectionOfStore .sectionOfStore__container .container__infoSectionThree {
+    .sectionofstore .sectionofstore__container .container__infosectionthree {
       color: grey;
       font-weight: bolder; }
-    .sectionOfStore .sectionOfStore__container .botonSinStock {
+    .sectionofstore .sectionofstore__container .botonsinstock {
       background-color: #aacfc8; }
-    .sectionOfStore .sectionOfStore__container .container__description {
+    .sectionofstore .sectionofstore__container .container__description {
       display: none;
       position: absolute;
       top: 0;
@@ -222,15 +228,15 @@ h1 {
       background: rgba(27, 27, 27, 0.5); }
 
 /* Contacto */
-.seccionContacto {
+.seccioncontacto {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 30px;
   flex-wrap: wrap; }
-  .seccionContacto .contactoInfoLocal {
+  .seccioncontacto .contactoinfolocal {
     margin-top: 150px; }
-  .seccionContacto .formulario_ {
+  .seccioncontacto .formulario_ {
     box-sizing: border-box;
     border: 2px black solid;
     width: 400px;
@@ -238,44 +244,43 @@ h1 {
     margin: auto;
     border-radius: 4px;
     background-color: #aacfc8; }
-    .seccionContacto .formulario_ .formulario_ p {
+    .seccioncontacto .formulario_ .formulario_ p {
       font-size: 24px;
       margin-bottom: 20px; }
-    .seccionContacto .formulario_ .formularioDatos {
+    .seccioncontacto .formulario_ .formulariodatos {
       padding: 10px;
       margin-bottom: 16px; }
-  .seccionContacto .mapa {
+  .seccioncontacto .mapa {
     width: 600px;
     height: 450px;
     border: 2px solid black; }
 
 /* footer */
-.footerContainer {
+.footercontainer {
   display: flex;
   justify-content: space-around;
   background: #aacfc8; }
-  .footerContainer .section__titleOfSectionsFooter {
+  .footercontainer .section__titleofsectionsfooter {
     color: black;
     font-size: 30px;
-    /*  padding-bottom: 20px; */
     text-align: center; }
-  .footerContainer .list__titleOfSectionsFooter, .footerContainer .section__titleOfSectionsFooterLast {
+  .footercontainer .list__titleofsectionsfooter, .footercontainer .section__titleofsectionsfooterlast {
     text-align: left;
     color: black;
     font-size: 30px;
     padding-bottom: 5px; }
-  .footerContainer .section__cardsAccepted {
+  .footercontainer .section__cardsaccepted {
     width: 400px;
     height: 180px; }
-  .footerContainer .infoPlace__data {
+  .footercontainer .infoplace__data {
     color: black; }
-  .footerContainer .infoPlace__imageFooter {
+  .footercontainer .infoplace__imagefooter {
     height: 40px;
     width: 40px; }
-  .footerContainer .list__footerMenu {
+  .footercontainer .list__footermenu {
     text-decoration: none;
     list-style: none; }
-    .footerContainer .list__footerMenu .footerMenu__Links {
+    .footercontainer .list__footermenu .footermenu__links {
       color: black;
       text-decoration: none;
       list-style: none;
@@ -294,46 +299,46 @@ h1 {
     .headernav .headernav__menu {
       display: block;
       margin-left: 0px; }
-  .conteinerOfCarousel {
+  .conteinerofcarousel {
     margin: 0px 0px 50px 0px; }
-    .conteinerOfCarousel .carousel-inner {
+    .conteinerofcarousel .carousel-inner {
       width: 760px;
       height: 284px; }
-  .articleIndex .articleIndex__wrapper .wrapper__img {
+  .articleindex .articleindex__wrapper .wrapper__img {
     width: 200px;
     height: 200px; }
-  .imgPromo {
+  .imgpromo {
     width: 300px;
     height: 200px; }
-  .history .history__containerLocalImage .containerLocalImage__image:hover {
+  .history .history__containerlocalimage .containerlocalimage__image:hover {
     transform: scale(2.5, 2.5); }
-  .sectionOfStore {
+  .sectionofstore {
     display: block; }
-    .sectionOfStore .sectionOfStore__container {
+    .sectionofstore .sectionofstore__container {
       margin-top: 25px; }
-  .seccionContacto .contactoInfoLocal {
+  .seccioncontacto .contactoinfolocal {
     margin: 25px 0px 15px 0px;
     width: 325px; }
-    .seccionContacto .contactoInfoLocal .imgContact {
+    .seccioncontacto .contactoinfolocal .imgcontact {
       width: 325px; }
-  .seccionContacto .formulario_ {
+  .seccioncontacto .formulario_ {
     width: 324px;
     height: 554px;
     margin-bottom: 15px; }
-    .seccionContacto .formulario_ .formularioDatos_ {
+    .seccioncontacto .formulario_ .formulariodatos_ {
       width: 198px;
       height: 150px; }
-  .seccionContacto .mapa {
+  .seccioncontacto .mapa {
     width: 320px; }
-  .footerContainer {
+  .footercontainer {
     display: block;
     text-align: -webkit-center;
     width: 100%; }
-    .footerContainer .footerContainer__section .section__titleOfSectionsFooterLast {
+    .footercontainer .footercontainer__section .section__titleofsectionsfooterlast {
       text-align: center; }
-    .footerContainer .footerContainer__section .list__titleOfSectionsFooter {
+    .footercontainer .footercontainer__section .list__titleofsectionsfooter {
       text-align: center; }
-    .footerContainer .footerContainer__section .section__cardsAccepted {
+    .footercontainer .footercontainer__section .section__cardsaccepted {
       width: 300px;
       height: 150px; } }
 
@@ -350,42 +355,42 @@ h1 {
     .headernav .headernav__menu {
       display: block;
       margin-left: 0px; }
-  .articleIndex .articleIndex__wrapper .wrapper__img {
+  .articleindex .articleindex__wrapper .wrapper__img {
     width: 150px;
     height: 150px; }
-  .imgPromo {
+  .imgpromo {
     width: 350px;
     height: 120px; }
-  .conteinerOfCarousel {
+  .conteinerofcarousel {
     margin: 0px 0px 50px 0px; }
-    .conteinerOfCarousel .carousel-inner {
+    .conteinerofcarousel .carousel-inner {
       width: 360px;
       height: 150px; }
-  .history .history__containerLocalImage .containerLocalImage__image:hover {
+  .history .history__containerlocalimage .containerlocalimage__image:hover {
     transform: scale(3.3, 3.3); }
-  .sectionOfStore {
+  .sectionofstore {
     display: block; }
-    .sectionOfStore .sectionOfStore__container {
+    .sectionofstore .sectionofstore__container {
       margin-top: 20px; }
-  .seccionContacto .contactoInfoLocal {
+  .seccioncontacto .contactoinfolocal {
     margin: 25px 0px 15px 0px;
     width: 250px; }
-    .seccionContacto .contactoInfoLocal .imgContact {
+    .seccioncontacto .contactoinfolocal .imgcontact {
       width: 250px; }
-  .seccionContacto .formulario_ {
+  .seccioncontacto .formulario_ {
     width: 250px;
     margin-bottom: 15px; }
-    .seccionContacto .formulario_ .formularioDatos_ {
+    .seccioncontacto .formulario_ .formulariodatos_ {
       width: 198px;
       height: 150px; }
-  .footerContainer {
+  .footercontainer {
     display: block;
     text-align: -webkit-center;
     width: 100%; }
-    .footerContainer .footerContainer__section .section__titleOfSectionsFooterLast {
+    .footercontainer .footercontainer__section .section__titleofsectionsfooterlast {
       text-align: center; }
-    .footerContainer .footerContainer__section .list__titleOfSectionsFooter {
+    .footercontainer .footercontainer__section .list__titleofsectionsfooter {
       text-align: center; }
-    .footerContainer .footerContainer__section .section__cardsAccepted {
+    .footercontainer .footercontainer__section .section__cardsaccepted {
       width: 300px;
       height: 150px; } }
