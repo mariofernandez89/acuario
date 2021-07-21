@@ -328,6 +328,7 @@ h1{
       .container__description{
          display: none;
          position: absolute;
+         box-sizing: initial;
          top: 0;
          bottom: 20%;
          background: rgba(27, 27, 27, 0.5);
@@ -505,9 +506,10 @@ h1{
  
  
     .history{
+       margin-bottom: 30px;
     .history__container-local-image{
        .container-local-image__image:hover{
-          transform: scale(3.3,3.3);
+          transform: scale(2.2,2.2);
           }
        }
     }
@@ -656,9 +658,10 @@ h1{
  
  
     .history{
+      margin-bottom: 30px;
     .history__container-local-image{
        .container-local-image__image:hover{
-          transform: scale(3.3,3.3);
+          transform: scale(2.2,2.2);
           }
        }
     }

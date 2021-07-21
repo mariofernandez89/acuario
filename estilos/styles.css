@@ -216,6 +216,7 @@ h1 {
     .section-of-store .section-of-store__container .container__description {
       display: none;
       position: absolute;
+      box-sizing: initial;
       top: 0;
       bottom: 20%;
       background: rgba(27, 27, 27, 0.5); }
@@ -305,8 +306,10 @@ h1 {
   .img-promo {
     width: 100%;
     height: 100%; }
-  .history .history__container-local-image .container-local-image__image:hover {
-    transform: scale(3.3, 3.3); }
+  .history {
+    margin-bottom: 30px; }
+    .history .history__container-local-image .container-local-image__image:hover {
+      transform: scale(2.2, 2.2); }
   .contenedor-de-videos .videos {
     border: solid 5px green; }
   .section-of-store {
@@ -377,8 +380,10 @@ h1 {
   .img-promo {
     width: 100%;
     height: 100%; }
-  .history .history__container-local-image .container-local-image__image:hover {
-    transform: scale(3.3, 3.3); }
+  .history {
+    margin-bottom: 30px; }
+    .history .history__container-local-image .container-local-image__image:hover {
+      transform: scale(2.2, 2.2); }
   .section-of-store {
     display: block; }
     .section-of-store .section-of-store__container {
