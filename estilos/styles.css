@@ -146,8 +146,7 @@ h1 {
 /* preguntas frecuentes */
 .contenedor-de-preguntas {
   width: 80%;
-  margin: auto;
-  /* table de bootstrap */ }
+  margin: auto; }
   .contenedor-de-preguntas .contenedor-de-preguntas__title-of-section {
     text-align: center; }
   .contenedor-de-preguntas .contenedor-de-preguntas__info {
