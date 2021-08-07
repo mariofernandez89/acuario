@@ -10,11 +10,11 @@
 body{
    background-color:$color-primary;
    color: #000;
-   padding: 30px 0px 0px 0px;
+   padding-top: 30px;
 }
 
 main{
-   margin: 60px 0px 40px 0px;
+   margin: 60px 0 40px 0;
    overflow: hidden;
 }
 
@@ -76,7 +76,7 @@ h1{
 
 /* Menu */
 .header-nav{
-   padding: 5px 0px 15px 0px;
+   padding: 5px 0 15px 0;
    background-color:#aacfc8;
    position: fixed;
    top: 0;
@@ -85,7 +85,7 @@ h1{
    .header-nav__menu {
       display: flex;
       text-align: center;
-      padding: 0px;
+      padding: 0;
       justify-content: space-around;
 
       .menu__links{
@@ -108,7 +108,7 @@ h1{
          .links-store__list{
             position: absolute;
             display: none;
-            padding: 0px;
+            padding: 0;
          
             .list__items{
                display: inline;
@@ -133,7 +133,7 @@ h1{
 /* Index */
  
 .conteiner-of-carousel{
-   margin: 0px 127px 50px 155px;
+   margin: 0 127px 50px 155px;
 }
 
 .article-index{
@@ -163,7 +163,6 @@ h1{
 .promociones{
    display: flex;
    justify-content: center;
-
 }
 
 
@@ -222,6 +221,7 @@ h1{
 
    .contenedor-de-preguntas__title-of-section{
       text-align: center;
+      margin-bottom: 30px;
    }
    .contenedor-de-preguntas__info{
       font-size: 20px;
@@ -234,28 +234,18 @@ h1{
       font-family: 'Josefin Sans', sans-serif;
       text-decoration: underline;
       text-align: center;
-      margin: 50px 0px 50px 0px;
+      margin: 50px 0 50px 0;
    
    }
 }
 
 .contenedor-de-videos{
-   display: grid;
-   grid-template-columns: 100%;
-   grid-template-rows: auto;
-   row-gap: 40px;
-   width: 80%;
-   margin: auto;
-      .contenedor-de-videos__title{
-         text-align: center;
-         font-size: 45px;
-      }
-   .videos{
-      border: solid 5px rgb(255, 217, 0);;
-      height: 300px;
-      width: 100%;
-   }
-
+   text-align: -webkit-center
+}
+.videos{
+   border: solid 5px rgb(255, 217, 0);;
+   height: 100%;
+   width: 540px;
 }
 
 
@@ -268,7 +258,7 @@ h1{
    color: #000444;
    font-weight: bolder;
    font-size: 40px;
-   padding:40px 0px 40px 0px;
+   padding:40px 0 40px 0;
    text-align: center;
 }
 
@@ -418,7 +408,15 @@ h1{
 
 }
 
-
+/* respuesta */
+   .sent__answer{
+      font-size: 35px;
+      color: #000444;
+      text-align: center;
+   }
+   .sent__image{
+      text-align: center;
+   }
 
 
 
@@ -470,7 +468,7 @@ h1{
  
  
  .conteiner-of-carousel{
-    margin: 0px 0px 50px 0px;
+    margin-bottom:50px;
     .carousel-inner{
      width: 100%;
      height: 100%;
@@ -537,7 +535,7 @@ h1{
  
     .seccion-contacto{
        .contacto-info-local{
-          margin: 25px 0px 15px 0px;
+          margin: 25px 0 15px 0;
           width: 85%;
           height: 100%;
           text-align: center;
@@ -590,6 +588,15 @@ h1{
           margin: 0px;
           font-size: 30px;
        }
+
+       .sent__answer{
+         font-size: 30px;
+      }
+      
+      .image__answer{
+         width: 100%;
+         height: 100%;
+      }
  } 
 
 
@@ -624,7 +631,7 @@ h1{
    .header-nav{
       position: initial;
       text-align: -webkit-center;
-      padding: 0px;
+      padding: 0;
       .header-nav__menu{
        display: block;
        text-align: inherit;
@@ -649,7 +656,7 @@ h1{
  
  
  .conteiner-of-carousel{
-    margin: 0px 0px 50px 0px;
+    margin-bottom:50px;
     .carousel-inner{
      width: 100%;
      height: 100%;
@@ -708,7 +715,7 @@ h1{
 
     .seccion-contacto{
        .contacto-info-local{
-          margin: 25px 0px 15px 0px;
+          margin: 25px 0 15px 0;
           width: 250px;
           .img-contact{
              width: 100%;
@@ -757,15 +764,23 @@ h1{
          }
       }
    } 
+
+   
        .info-place__data{
-          margin: 0px;
+          margin: 0;
        }
+
+       .sent__answer{
+         font-size: 25px;
+      }
+      
+      .image__answer{
+         width: 100%;
+         height: 100%;
+      }
  } 
  
  
-
-
-
 
 
 
